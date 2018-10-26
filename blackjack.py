@@ -116,12 +116,14 @@ def play_round(dealer, user):
 		dealer_curr_pts += next_dealer_card
 		print "Dealer currently has {} total points".format(dealer_curr_pts)
 
-		if dealer_curr_pts >= 18:
-			hit_me = choice([True, False])
-			if hit_me:
-				continue
-			else:
-				break
+		# if dealer_curr_pts < 16:
+		# 	hit_me = choice([True, False])
+		# 	if hit_me:
+		# 		continue
+		# 	else:
+		# 		break
+		# else:
+		# 	continue
 
 	if dealer_curr_pts > 21:
 		print "Dealer has busted!"
